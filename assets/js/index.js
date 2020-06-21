@@ -22,7 +22,7 @@ const generateColorHex = () => {
 const getDataColor = (color) => {
   const colorHex = color.replace("#", "");
 
-  fetch(`www.thecolorapi.com/id?hex=${colorHex}`)
+  fetch(`http://www.thecolorapi.com/id?hex=${colorHex}`)
     .then((res) => {
       return res.json();
     })
